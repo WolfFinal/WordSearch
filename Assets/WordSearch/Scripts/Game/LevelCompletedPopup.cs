@@ -19,6 +19,7 @@ namespace BBG.WordSearch
 		[SerializeField] private GameObject rewardsContainer		= null;
 		[SerializeField] private GameObject coinRewardContainer		= null;
 		[SerializeField] private GameObject keyRewardContainer		= null;
+		[SerializeField] private GameObject ADSReward				= null;
 		[SerializeField] private Text		coinRewardAmountText	= null;
 		[SerializeField] private Text		keyRewardAmountText		= null;
 
@@ -37,6 +38,7 @@ namespace BBG.WordSearch
 
 			playAgainButton.SetActive(!progressLevelCompleted);
 			nextLevelButton.SetActive(progressLevelCompleted && !lastLevel);
+			ADSReward.SetActive(true);
 
 			bool awardCoins	= coinsAwarded > 0;
 			bool awardKeys	= keyAwarded > 0;
