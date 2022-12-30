@@ -94,6 +94,7 @@ namespace BBG.WordSearch
 			wordList.Initialize();
 
 			InitSave();
+			Application.targetFrameRate = 60;
 
 			#if BBG_MY_IAP
 			BBG.MobileTools.IAPManager.Instance.OnProductPurchased += IAPProductPurchased;

@@ -619,7 +619,6 @@ namespace BBG.WordSearch
 					}
 				}
 			}
-
 			return null;
 		}
 
