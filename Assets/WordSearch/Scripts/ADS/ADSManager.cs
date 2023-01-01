@@ -16,6 +16,7 @@ namespace BBG.WordSearch
 		[Header("Reward")]
 		[SerializeField] private int coinReward;
 		[SerializeField] GameObject ADSRewardButton;
+		[SerializeField] CoinRewardNotify CoinRewardNotify;
 		public static ADSManager Instance;
 		private void Awake()
 		{
@@ -62,7 +63,8 @@ namespace BBG.WordSearch
 		{
 			GameManager.Instance.Coins += coinReward;
 			ADSRewardButton.gameObject.SetActive(false);
-			
+			CoinRewardNotify.gameObject.SetActive(true);
+
 		}
 	}
 }
