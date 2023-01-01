@@ -64,6 +64,7 @@ namespace BBG.WordSearch
 			GameManager.Instance.Coins += coinReward;
 			ADSRewardButton.gameObject.SetActive(false);
 			CoinRewardNotify.gameObject.SetActive(true);
+			SoundManager.Instance.Play("rewardnotify");
 
 		}
 	}
